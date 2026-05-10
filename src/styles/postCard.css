@@ -1,0 +1,162 @@
+.post-card-container {
+  z-index: 100;
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 15px;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.post-card-container ::-webkit-scrollbar {
+  background-color: black;
+}
+
+.post-card-container .p-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.post-card-container .p-header button {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: none;
+  background: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+.post-card-container .p-header button:hover {
+  background-color: #48505870;
+}
+.post-card-container .p-header h3 {
+  margin: 0;
+}
+.post-card-container .p-body {
+  overflow-y: scroll;
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+}
+.post-card-container .p-body img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.post-card-container .comments-container {
+  padding-top: 10px;
+}
+.post-card-container .comments-container .comment-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+.post-card-container .comments-container .comment-card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+}
+.post-card-container .comments-container .comment-card .comment-details {
+  min-width: 100px;
+  background-color: rgba(59, 59, 59, 0.7);
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.post-card-container .comments-container .comment-card .comment-details .owner {
+  font-size: 14px;
+}
+.post-card-container .p-footer {
+  height: auto;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.post-card-container .p-footer img {
+  object-fit: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.post-card-container .p-footer .comment-area {
+  position: relative;
+  flex: 1;
+}
+.post-card-container .p-footer .comment-area textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-family:
+    Segoe UI Historic,
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif;
+  resize: none;
+}
+.post-card-container .p-footer .comment-area button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: not-allowed;
+  color: rgba(255, 255, 255, 0.5);
+}
+.post-card-container .p-footer .comment-area button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.post-card-container .p-footer .comment-area .active {
+  cursor: pointer;
+  color: white;
+}
+.post-card-container .p-footer .spinner {
+  width: 10px;
+  height: 10px;
+  border-top: 4px solid black;
+}
+
+@media screen and (max-width: 480px) {
+  .post-card-container {
+    top: 23vh;
+    left: 5vw;
+    width: 90vw;
+    height: 45vh;
+  }
+  .post-card-container .p-body {
+    padding: 5px;
+  }
+  .post-card-container .p-footer .comment-area textarea {
+    height: 40px;
+  }
+  .post-card-container .p-footer {
+    padding: 20px 10px 10px 10px;
+  }
+}

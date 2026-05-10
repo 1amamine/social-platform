@@ -1,0 +1,131 @@
+#loginPage .container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #1a2238;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#loginPage h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+#loginPage .loginForm {
+  min-width: 30rem;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#loginPage .passwordField,
+#loginPage .usernameField {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginPage .passwordField div {
+  display: flex;
+  align-items: center;
+}
+
+#loginPage label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+#loginPage input {
+  padding: 0.6rem;
+  border: 1px solid #334155;
+  background: #38425a;
+  color: #f8fafc;
+  font-size: 1rem;
+  flex: 1;
+}
+
+#loginPage input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+#loginPage .submitBtn {
+  width: 100%;
+  height: 45px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#loginPage .submitBtn:hover {
+  background: #1d4ed8;
+}
+
+#loginPage p {
+  font-size: 14px;
+}
+
+#loginPage .registerPg {
+  margin-top: 18px;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+#loginPage .registerPg a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#loginPage .registerPg a:hover {
+  text-decoration: underline;
+}
+
+#loginPage .error {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin: 0.4rem;
+}
+
+#loginPage .togglePassword {
+  position: absolute;
+  display: flex;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.spinner {
+  justify-self: center;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

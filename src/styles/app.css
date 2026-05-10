@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(54, 54, 54);
+  color: aliceblue;
+}
+.full-page-loader {
+  background-color: rgb(54, 54, 54);
+}
+
+::-webkit-scrollbar {
+  background-color: #1a2238;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+.saved-section-container {
+  align-self: flex-end;
+  margin-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .saved-section-container {
+    margin: 0;
+    width: 90vw;
+    align-self: center;
+  }
+}

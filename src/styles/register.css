@@ -1,0 +1,123 @@
+#registerPage .container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #1a2238;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#registerPage h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+#registerPage .registerForm {
+  min-width: 30rem;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#registerPage .passwordField,
+#registerPage .usernameField {
+  display: flex;
+  flex-direction: column;
+}
+
+#registerPage .passwordField div {
+  display: flex;
+  align-items: center;
+}
+
+#registerPage label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+#registerPage input {
+  padding: 0.6rem;
+  border: 1px solid #334155;
+  background: #38425a;
+  color: #f8fafc;
+  font-size: 1rem;
+  flex: 1;
+}
+
+#registerPage input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+#registerPage .submitBtn {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#registerPage .submitBtn:hover {
+  background: #1d4ed8;
+}
+
+#registerPage p {
+  font-size: 14px;
+}
+
+#registerPage .loginPg {
+  margin-top: 18px;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+#registerPage .loginPg a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#registerPage .loginPg a:hover {
+  text-decoration: underline;
+}
+
+#registerPage .error {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin: 0.4rem;
+}
+
+#registerPage .togglePassword {
+  position: absolute;
+  display: flex;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+#registerPage .togglePassword {
+  position: absolute;
+  display: flex;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #f8fafc;
+}

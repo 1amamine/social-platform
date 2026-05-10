@@ -1,0 +1,304 @@
+.container {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  font-family:
+    Segoe UI Historic,
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #0f172a;
+  color: #f9fafb;
+}
+
+.left-section {
+  position: relative;
+  z-index: 2;
+  background-color: #0f172a;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  padding-top: 60px;
+}
+
+.left-section .menuItem {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+}
+.left-section .menuItem .icon {
+  position: relative;
+}
+.left-section .menuItem span {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+.left-section .menuItem .label {
+  display: none;
+}
+
+.left-section .profile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 90px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.left-section .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-section .profile-label {
+  position: absolute;
+  bottom: 140px;
+  left: 50px;
+  background-color: #0f172a;
+  box-shadow:
+    rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+    rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+  width: 200px;
+  font-size: 14px;
+  padding: 15px 10px;
+}
+.left-section .profile-label div {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.center-section {
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.right-section {
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  overflow-y: auto;
+}
+.right-section .searchBar {
+  position: relative;
+  width: 340px;
+  margin: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-section .searchBar .searchIcn {
+  color: rgba(255, 255, 255, 0.505);
+  position: absolute;
+  left: 20px;
+}
+.right-section .searchBar input {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  border-radius: 20px;
+}
+.right-section .following,
+.right-section .suggestions {
+  background-color: #1f2937;
+  border-radius: 15px;
+  width: 330px;
+  margin: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.right-section .suggestions {
+  margin-bottom: 50px;
+}
+.right-section .head {
+  display: flex;
+  justify-content: left;
+}
+.right-section .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.right-section .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+.right-section .content .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  padding: 5px 0;
+  column-gap: 5px;
+}
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: hidden;
+}
+.right-section .content img {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.right-section .content .firstName {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.right-section .content .secondName {
+  font-size: 13px;
+  font-weight: 500;
+}
+.right-section .btn {
+  color: white;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 6px 12px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.right-section .follow {
+  color: black;
+  background-color: white;
+  padding: 8px 15px;
+}
+
+.user-display {
+  background-color: #fff;
+  color: black;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  left: 300px;
+  top: 100px;
+}
+.user-edit {
+  background-color: crimson;
+  color: white;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  right: 300px;
+  top: 100px;
+}
+
+.create-post {
+  background-color: darkgreen;
+  color: white;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  left: 300px;
+  bottom: 50px;
+}
+
+.user-posts {
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  right: 300px;
+  bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .center-section {
+    width: 100vw;
+  }
+  .left-section {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+  }
+  .left-section .profile {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+  .right-section {
+    display: none;
+  }
+}
+
+@media (hover: hover) {
+  .left-section:hover {
+    width: 220px;
+  }
+  .left-section .menuItem:hover {
+    background-color: #1f2937;
+  }
+  .left-section:hover .menuItem .label {
+    font-size: 16px;
+    display: block;
+  }
+  .left-section:hover .menuItem .active {
+    font-weight: bolder;
+  }
+  .left-section .profile-label div:hover {
+    background-color: #1f2937;
+  }
+  .right-section .content .firstName:hover {
+    text-decoration: underline;
+  }
+}

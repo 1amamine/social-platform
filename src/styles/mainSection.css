@@ -1,0 +1,253 @@
+.main-section-container {
+  align-self: flex-end;
+  margin-right: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.main-section-container .header {
+  z-index: 1;
+  width: 59.4%;
+  height: 55px;
+  position: fixed;
+  left: 5%;
+  right: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.6);
+  color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  cursor: pointer;
+}
+.main-section-container .header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+.main-section-container .header .active {
+  color: white;
+  font-weight: 600;
+  max-width: fit-content;
+  border-bottom: 3px solid #4f46e5;
+}
+.main-section-container .createSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+  max-width: 100%;
+  padding: 10px 20px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  background: #1f2937;
+  border-radius: 12px;
+}
+.createSection .placeholder {
+  background-color: #343e49;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  padding: 10px 15px;
+  flex: 1;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.createSection .placeholder:hover {
+  background-color: rgba(87, 95, 101, 0.9);
+}
+.createSection .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 26px;
+  border-radius: 50%;
+}
+.createSection .icon label {
+  cursor: pointer;
+}
+.createSection .icon:hover {
+  background-color: rgba(128, 128, 128, 0.422);
+}
+.createSection .pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 15px;
+  top: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.createSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.post {
+  height: auto;
+  max-width: 100%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #1f2937;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.post .postHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.post .postHeader .postDetails {
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.post .postHeader .postDetails .follow {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: cornflowerblue;
+}
+.post .postHeader .postDetails .follow:hover {
+  text-decoration: underline;
+}
+.postOwnerprfl {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.postOwnerprfl img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.postOtherDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.postOwnerName {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.postOwnerName:hover {
+  text-decoration: underline;
+}
+.postSharingTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: #f9fafb;
+}
+.menuIcn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menuIcn:hover {
+  background: #343e49;
+}
+.post-description {
+  font-size: 16px;
+}
+.post .postContent {
+  align-self: self-start;
+  width: 100%;
+  max-height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.postContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.post .postFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.post .postFooter .reactions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.post .postFooter .reactions div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+.likeNmbr,
+.commentNmbr,
+.shareNmbr {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.likeIcn,
+.commentIcn,
+.shareIcn,
+.saveIcn {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .main-section-container {
+    align-self: center;
+    margin-right: 0;
+    padding-bottom: 50px;
+    width: 90vw;
+  }
+  .main-section-container .skeleton {
+    width: 90vw;
+  }
+  .main-section-container .header {
+    width: 98vw;
+    height: 55px;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+  }
+  .main-section-container .createSection {
+    height: 40px;
+  }
+  .createSection .placeholder {
+    font-size: 14px;
+  }
+}
