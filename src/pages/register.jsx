@@ -77,8 +77,8 @@ function Register() {
   return (
     <div id="registerPage">
       <div className="container">
-        <h1>Register</h1>
         <form onSubmit={handleSignUp} className="registerForm">
+          <h1>Register</h1>
           <div className="usernameField">
             <label htmlFor="usernameinput">Username:</label>
             <input
@@ -88,7 +88,6 @@ function Register() {
               onChange={(e) => setUserName(e.target.value)}
             />
           </div>
-
           <div className="usernameField">
             <label htmlFor="emailinput">Email:</label>
             <input
@@ -99,7 +98,6 @@ function Register() {
             />
             {errors.email && <p className="error">{errors.email}</p>}
           </div>
-
           <div className="passwordField">
             <label htmlFor="passwordinput">Password:</label>
             <div>

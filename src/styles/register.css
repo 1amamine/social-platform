@@ -12,7 +12,6 @@
 
 #registerPage h1 {
   text-align: center;
-  margin-bottom: 24px;
   font-size: 32px;
 }
 
@@ -120,4 +119,13 @@
   cursor: pointer;
   font-size: 18px;
   color: #f8fafc;
+}
+
+@media screen and (max-width: 480px) {
+  #registerPage .registerForm {
+    min-width: 0;
+    width: 90vw;
+    top: 30%;
+    left: 5%;
+  }
 }
